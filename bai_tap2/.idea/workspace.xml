@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="993b20ee-c9bb-4c2f-ab8c-f0a3d00cc765" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss1/fibonacci.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_tap/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_tap/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_tap/.idea/bai_tap.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_tap/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_tap/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_tap/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_tap/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_tap/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_tap/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_tap/src/ss1/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_tap/src/ss1/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_tap/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case_study/furama.html" beforeDir="false" afterPath="$PROJECT_DIR$/../case_study/furama.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2HqWVeySAp1Dgao4FfmxvhII7EX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="D:\CODEGYM\MODULE_5\C0622G1-TRANDANGQUANGANH-module5\bai_tap2\node_modules\prettier" />
+    <property name="ts.external.directory.path" value="D:\CODEGYM\MODULE_5\C0622G1-TRANDANGQUANGANH-module5\bai_tap2\node_modules\typescript\lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\CODEGYM\MODULE_5\C0622G1-TRANDANGQUANGANH-module5\bai_tap2\angulaOver\src" />
+      <recent name="D:\CODEGYM\MODULE_5\C0622G1-TRANDANGQUANGANH-module5\bai_tap2\src" />
+      <recent name="D:\CODEGYM\MODULE_5\C0622G1-TRANDANGQUANGANH-module5\bai_tap2\src\ss1" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="993b20ee-c9bb-4c2f-ab8c-f0a3d00cc765" name="Default Changelist" comment="" />
+      <created>1669013118930</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1669013118930</updated>
+      <workItem from="1669013120139" duration="153000" />
+      <workItem from="1669013565288" duration="4034000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/src/ss1/fibonacci.js" />
+        <option value="$PROJECT_DIR$/angulaOver/src/ss1/fibonacci.js" />
+      </list>
+    </option>
+  </component>
+</project>

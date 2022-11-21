@@ -1,0 +1,23 @@
+<h1 style="text-align: center;color: #1976d2">calculation app</h1>
+<table aria-colspan="3">
+  <tr>
+    <td>Number 1:</td>
+    <td colspan="3"><input type="number" [(ngModel)]="num1" ></td>
+  </tr>
+
+  <tr>
+    <td>Number 2:</td>
+    <td colspan="3"><input type="number" [(ngModel)]="num2" ></td>
+  </tr>
+
+  <tr>
+    <td><button (click)="getAddition()" >Addition(+)</button></td>
+    <td><button (click)="getSubtraction()" >Subtraction(-)</button></td>
+    <td><button (click)="getMultiplication()" >Multiplication(*)</button></td>
+    <td><button (click)="getDivision()" >Division(/)</button></td>
+  </tr>
+
+  <tr>
+    <td><h3 style="color: darkturquoise">Resul:</h3><span>{{resul}}</span></td>
+  </tr>
+</table>
