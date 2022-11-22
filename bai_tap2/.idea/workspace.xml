@@ -2,24 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="993b20ee-c9bb-4c2f-ab8c-f0a3d00cc765" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss1/fibonacci.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bai_tap/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bai_tap/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bai_tap/.idea/bai_tap.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bai_tap/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bai_tap/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bai_tap/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bai_tap/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bai_tap/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bai_tap/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bai_tap/src/ss1/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bai_tap/src/ss1/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bai_tap/tsconfig.json" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/header.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../case_study/furama.html" beforeDir="false" afterPath="$PROJECT_DIR$/../case_study/furama.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +18,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="2HqWVeySAp1Dgao4FfmxvhII7EX" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -47,12 +30,15 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../case_study_angular" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="D:\CODEGYM\MODULE_5\C0622G1-TRANDANGQUANGANH-module5\bai_tap2\node_modules\prettier" />
     <property name="ts.external.directory.path" value="D:\CODEGYM\MODULE_5\C0622G1-TRANDANGQUANGANH-module5\bai_tap2\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\CODEGYM\MODULE_5\C0622G1-TRANDANGQUANGANH-module5\bai_tap2\angulaOver\src\app\bai_tap" />
+      <recent name="D:\CODEGYM\MODULE_5\C0622G1-TRANDANGQUANGANH-module5\bai_tap2\angulaOver\src\app\hacker_news" />
       <recent name="D:\CODEGYM\MODULE_5\C0622G1-TRANDANGQUANGANH-module5\bai_tap2\angulaOver\src" />
       <recent name="D:\CODEGYM\MODULE_5\C0622G1-TRANDANGQUANGANH-module5\bai_tap2\src" />
       <recent name="D:\CODEGYM\MODULE_5\C0622G1-TRANDANGQUANGANH-module5\bai_tap2\src\ss1" />
@@ -69,7 +55,10 @@
       <option name="presentableId" value="Default" />
       <updated>1669013118930</updated>
       <workItem from="1669013120139" duration="153000" />
-      <workItem from="1669013565288" duration="4034000" />
+      <workItem from="1669013565288" duration="4856000" />
+      <workItem from="1669088371982" duration="331000" />
+      <workItem from="1669088717485" duration="5041000" />
+      <workItem from="1669100271227" duration="4559000" />
     </task>
     <servers />
   </component>
@@ -81,5 +70,11 @@
         <option value="$PROJECT_DIR$/angulaOver/src/ss1/fibonacci.js" />
       </list>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="740" y="270" key="FileChooserDialogImpl" timestamp="1669104273269">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="740" y="270" key="FileChooserDialogImpl/0.0.1920.1032@0.0.1920.1032" timestamp="1669104273269" />
   </component>
 </project>
