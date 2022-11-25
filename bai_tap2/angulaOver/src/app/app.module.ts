@@ -4,11 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CalculatorComponent } from './calculator/calculator.component';
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { ColorComponent } from './color/color/color.component';
 import { ArticleComponent } from './hacker_news/article/article.component';
 import { FooterComponent } from './hacker_news/footer/footer/footer.component';
 import { NavbarComponent } from './hacker_news/navbar/navbar/navbar.component';
+import { FormLoginComponent } from './form-login/form-login.component';
+import { FormRegisterComponent } from './form-register/form-register.component';
 
 @NgModule({
   declarations: [
@@ -18,12 +20,15 @@ import { NavbarComponent } from './hacker_news/navbar/navbar/navbar.component';
     ArticleComponent,
     FooterComponent,
     NavbarComponent,
+    FormLoginComponent,
+    FormRegisterComponent,
   ],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-        FormsModule
-    ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })

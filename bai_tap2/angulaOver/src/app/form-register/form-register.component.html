@@ -1,0 +1,158 @@
+<div class="mx-5 px-5 pt-3 pb-5">
+  <h2 class="text-center fw-bold">
+    ĐĂNG KÝ KHÁCH HÀNG
+  </h2>
+
+  <div class="d-flex justify-content-center">
+    <div class="w-50 border border-2 border-success p-3 rounded" [formGroup]="registerFormGroup">
+
+
+      <div class="form-group">
+        <label for="email" class="h6">Email:</label>
+        <div class="alert alert-danger" role="alert"
+             *ngIf="registerFormGroup.controls.email.hasError('required') &&
+                      registerFormGroup.controls.email.touched">
+          Email không được để trống!
+        </div>
+        <div class="alert alert-danger" role="alert"
+             *ngIf="registerFormGroup.controls.email.hasError('email') &&
+                      registerFormGroup.controls.email.touched">
+          Email phải đúng định dạng!
+        </div>
+        <div class="input-group">
+          <input type="text" id="email" class="form-control" placeholder="Nhập email.." formControlName="email"/>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="country" class="h6">Quốc Gia:</label>
+        <div class="alert alert-danger" role="alert"
+             *ngIf="registerFormGroup.controls.country.hasError('required') &&
+                      registerFormGroup.controls.country.touched">
+          Quốc Gia không được để trống!
+        </div>
+        <div class="input-group">
+          <select id="country" class="form-select" formControlName="country">
+            <option ngValue="" name="country">Chọn quốc tịch</option>
+            <option [ngValue]="country.id" *ngFor="let country of countryList" name="country">{{country.name}}</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="age" class="h6">Độ Tuổi:</label>
+        <div class="alert alert-danger" role="alert"
+             *ngIf="registerFormGroup.controls.age.hasError('required') &&
+                      registerFormGroup.controls.age.touched">
+          Tuổi không được để trống!
+        </div>
+        <div class="alert alert-danger" role="alert"
+             *ngIf="registerFormGroup.controls.age.hasError('min') &&
+                      registerFormGroup.controls.age.touched">
+          Phải trên 18 tuổi
+        </div>
+        <div class="input-group">
+          <input type="text" id="age" class="form-control" placeholder="Nhập Độ tuổi.." formControlName="age"/>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="male" class="h6">Giới tính:</label>
+        <div class="alert alert-danger" role="alert"
+             *ngIf="registerFormGroup.controls.gender.hasError('required') &&
+                      registerFormGroup.controls.gender.touched">
+          Giới tính không được để trống!
+        </div>
+        <div class="d-flex">
+          <label class="d-block me-4">
+            <input class="form-check-input" type="radio" name="gender" id="male" value="Nữ" formControlName="gender"/>Nữ
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                 class="bi bi-gender-female" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                    d="M8 1a4 4 0 1 0 0 8 4 4 0 0 0 0-8zM3 5a5 5 0 1 1 5.5 4.975V12h2a.5.5 0 0 1 0 1h-2v2.5a.5.5 0 0 1-1 0V13h-2a.5.5 0 0 1 0-1h2V9.975A5 5 0 0 1 3 5z"/>
+            </svg>
+          </label>
+        </div>
+        <div class="d-flex">
+          <label class="d-block me-4">
+            <input class="form-check-input" type="radio" name="gender" id="female" value="nam"
+                   formControlName="gender"/>Nam
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gender-male"
+                 viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                    d="M9.5 2a.5.5 0 0 1 0-1h5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-1 0V2.707L9.871 6.836a5 5 0 1 1-.707-.707L13.293 2H9.5zM6 6a4 4 0 1 0 0 8 4 4 0 0 0 0-8z"/>
+            </svg>
+          </label>
+        </div>
+        <div class="d-flex">
+          <label class="d-block me-4">
+            <input class="form-check-input" type="radio" name="gender" id="LGBT" value="LGBT" formControlName="gender"/>LGBT
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-heart"
+                 viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                    d="M2.965 12.695a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6c0 3.193-3.004 6-7 6a8.06 8.06 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a10.97 10.97 0 0 0 .398-2Zm-.8 3.108.02-.004c1.83-.363 2.948-.842 3.468-1.105A9.06 9.06 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.437 10.437 0 0 1-.524 2.318l-.003.011a10.722 10.722 0 0 1-.244.637c-.079.186.074.394.273.362a21.673 21.673 0 0 0 .693-.125ZM8 5.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+            </svg>
+          </label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="phone" class="h6">Số Điện Thoại:</label>
+        <div class="alert alert-danger" role="alert"
+             *ngIf="registerFormGroup.controls.phone.hasError('required') &&
+                      registerFormGroup.controls.phone.touched">
+          Số điện thoại không được để trống!
+        </div>
+        <div class="alert alert-danger" role="alert"
+             *ngIf="registerFormGroup.controls.phone.hasError('pattern') &&
+                      registerFormGroup.controls.phone.touched">
+          Số điện thoại phải đúng định dạng!!
+        </div>
+        <div class="input-group">
+          <input type="text" id="phone" class="form-control" placeholder="Nhập số điện thoại.."
+                 formControlName="phone"/>
+        </div>
+      </div>
+
+
+      <div formGroupName="passwordGroup">
+        <div class="form-group mt-3">
+          <label for="password" class="h6">Mật khẩu:</label>
+          <div class="alert alert-danger" role="alert"
+               *ngIf="registerFormGroup.get('passwordGroup').hasError('required', 'password')
+               && registerFormGroup.get('passwordGroup').get('password').touched">
+            Mật khẩu không được để trống!
+          </div>
+          <div class="alert alert-danger" role="alert"
+               *ngIf="registerFormGroup.get('passwordGroup').hasError('minlength', 'password')
+               && registerFormGroup.get('passwordGroup').get('password').touched">
+            Mật khẩu phải có ít nhất 6 kí tự!
+          </div>
+          <div class="input-group">
+            <input type="password" id="password" class="form-control" placeholder="Nhập mật khẩu.."
+                   formControlName="password"/>
+          </div>
+        </div>
+
+        <div class="form-group mt-3">
+          <label for="configPassword" class="h6">Nhập Lại Mật Khẩu</label>
+          <div class="alert alert-danger" role="alert"
+               *ngIf="registerFormGroup.controls.passwordGroup.hasError('passwordNotSame')&&
+                      registerFormGroup.controls.passwordGroup.touched">
+                Mật Khẩu Không Giống Nhau,Vui lòng nhập lại!!!
+          </div>
+          <div class="input-group">
+            <input id="configPassword" type="password" class="form-control" placeholder="Nhập Lại mật Khẩu" formControlName="confirmPassword">
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-3">
+        <button type="submit" (click)="getRegisterInfor()" [disabled]="registerFormGroup.invalid" class="btn btn-brymary">
+          Đăng Ký<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar2-heart" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5ZM1 3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V3Zm2 .5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V4a.5.5 0 0 0-.5-.5H3Zm5 4.493c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+        </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

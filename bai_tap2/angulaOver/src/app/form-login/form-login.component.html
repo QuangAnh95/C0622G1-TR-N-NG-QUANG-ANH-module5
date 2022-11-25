@@ -1,0 +1,58 @@
+<div class="container">
+  <h2 style="text-align: center"> FORM LOGIN</h2>
+  <form [formGroup]="loginForm" (ngSubmit)="onSumit()" autocomplete="off">
+    <div class="mb-3">
+      <label class="form-label">Email address</label>
+      <input formControlName="email" type="email" class="form-control"
+             [ngClass]="loginForm.controls['email'].invalid?'is-invalid':'is-valid'" placeholder="vui lòng nhập Email">
+
+      <div class="form-group">
+        <div class="alert alert-danger" role="alert"
+             *ngIf="loginForm.controls.email.hasError('required') &&
+                      loginForm.controls.email.touched">
+          Email không được để trống!
+        </div>
+        <div class="alert alert-danger" role="alert"
+             *ngIf="loginForm.controls.email.hasError('email') &&
+                      loginForm.controls.email.touched">
+          Email phải đúng định dạng!
+        </div>
+      </div>
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Password</label>
+      <input formControlName="password" type="password" class="form-control"
+             [ngClass]="loginForm.controls['password'].invalid?'is-invalid':'is-valid'"
+             placeholder="Vui lòng nhập Password">
+
+      <div class="form-group">
+        <div class="alert alert-danger" role="alert"
+             *ngIf="loginForm.controls.password.hasError('required') &&
+                      loginForm.controls.password.touched">
+          Mật Khẩu Không được để trống!
+        </div>
+        <div class="alert alert-danger" role="alert"
+             *ngIf="loginForm.controls.password.hasError('minLength') &&
+                      loginForm.controls.password.touched">
+          Mật Khẩu phải có ít nhất 6 ký tự!!
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">ConfirmPassWord</label>
+        <input formControlName="comfirmPassword" type="password" class="form-control"
+               [ngClass]="loginForm.errors?.reConfirmPass ?'is-invalid':'is-valid'">
+      </div>
+      <div *ngIf="loginForm.errors?.reConfirmPass " class="alert alert-danger">
+        Nhập lại mật khẩu không trùng khớp
+      </div>
+    </div>
+
+
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <button type="submit" class="btn btn-primary" [disabled]="!loginForm.valid">Submit</button>
+  </form>
+</div>
