@@ -9,6 +9,7 @@ import { FooterComponent } from './caseStudy/footer/footer.component';
 import { ListFacilityComponent } from './caseStudy/facility/list-facility/list-facility.component';
 import { EditFacilityComponent } from './caseStudy/facility/edit-facility/edit-facility.component';
 import { CreateFacilityComponent } from './caseStudy/facility/create-facility/create-facility.component';
+import {ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { CreateFacilityComponent } from './caseStudy/facility/create-facility/cr
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

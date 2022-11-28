@@ -1,6 +1,8 @@
-import {Component, EventEmitter, OnInit, Output} from '@angular/core';
-import {Facility} from "../../model/Facility";
+import {Component,  OnInit} from '@angular/core';
+import {FormControl, FormGroup, Validators} from "@angular/forms";
 import {FacilityService} from "../../service/facility.service";
+import {Router} from "@angular/router";
+
 
 @Component({
   selector: 'app-create-facility',
@@ -8,47 +10,44 @@ import {FacilityService} from "../../service/facility.service";
   styleUrls: ['./create-facility.component.css']
 })
 export class CreateFacilityComponent implements OnInit {
-  @Output('newFacility') onCreate = new EventEmitter<Facility>();
 
-  constructor(private facilityService: FacilityService) {
+  facilityFormGroup: FormGroup = new FormGroup({
+    facilityId: new FormControl(''),
+    facilityName: new FormControl('', [Validators.required, Validators.pattern('^[a-zA-Z ]+$')]),
+    facilityArea: new FormControl('', [Validators.required, Validators.pattern('^[1-9]\\d*$')]),
+    rentCost: new FormControl('', [Validators.required, Validators.pattern('^[1-9]\\d*$')]),
+    maxPeople: new FormControl('', [Validators.required, Validators.pattern('^[1-9]\\d*$')]),
+    standardRoom: new FormControl(''),
+    descriptionOtherConvenience: new FormControl(''),
+    poolArea: new FormControl(''),
+    numberOfFloors: new FormControl(''),
+    facilityFree: new FormControl(''),
+    rentType: new FormControl('', Validators.required),
+    facilityType: new FormControl('', Validators.required),
+    facilityImage: new FormControl('', Validators.required)
+  });
+
+  facilityTypeList: string[] = ['Villa', 'House', 'Room'];
+  rentTypeList: string[] = ['Giờ', 'Ngày', 'Tháng', 'Năm'];
+
+  idAuto = this.facilityService.findAll()[this.facilityService.findAll().length - 1].facilityId + 1;
+
+  status: string;
+
+  constructor(private facilityService: FacilityService,
+              private router: Router) {
   }
-
-  facility: Facility | undefined
 
   ngOnInit(): void {
   }
 
-
-  createFacility(facilityId: number,
-                 facilityName: string,
-                 facilityArea: number,
-                 rentCost: number,
-                 maxPeople: number,
-                 standardRoom: string,
-                 descriptionOtherConvenience: string,
-                 poolArea: number,
-                 numberOfFloors: number,
-                 facilityFree: string,
-                 rentType: string,
-                 facilityType: string,
-                 facilityImage: string) {
-    this.facility = {
-      facilityId: facilityId,
-      facilityName: facilityName,
-      facilityArea: facilityArea,
-      rentCost: rentCost,
-      maxPeople: maxPeople,
-      standardRoom: standardRoom,
-      descriptionOtherConvenience: descriptionOtherConvenience,
-      poolArea: poolArea,
-      numberOfFloors: numberOfFloors,
-      facilityFree: facilityFree,
-      rentType: rentType,
-      facilityType: facilityType,
-      facilityImage: facilityImage
-    }
-    console.log(this.facility);
-    this.facilityService.saveFacility(this.facility);
-
+  submit(): void {
+    const facility = this.facilityFormGroup.value;
+    this.facilityService.saveFacility(facility);
+    alert('Thêm mới dịch vụ  [' + facility.facilityName + ']  thành công!');
+    this.facilityFormGroup.reset();
+    this.router.navigateByUrl('facility');
+    this.idAuto++;
   }
+
 }

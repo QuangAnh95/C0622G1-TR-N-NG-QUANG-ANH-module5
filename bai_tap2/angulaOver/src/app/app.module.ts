@@ -11,6 +11,8 @@ import { FooterComponent } from './hacker_news/footer/footer/footer.component';
 import { NavbarComponent } from './hacker_news/navbar/navbar/navbar.component';
 import { FormLoginComponent } from './form-login/form-login.component';
 import { FormRegisterComponent } from './form-register/form-register.component';
+import { CreateProductComponent } from './product/create-product/create-product.component';
+import { ListProductComponent } from './product/list-product/list-product.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,8 @@ import { FormRegisterComponent } from './form-register/form-register.component';
     NavbarComponent,
     FormLoginComponent,
     FormRegisterComponent,
+    CreateProductComponent,
+    ListProductComponent,
   ],
   imports: [
     BrowserModule,
