@@ -1,0 +1,16 @@
+{
+  "category": [
+    {
+      "id": 1,
+      "name": "samsung"
+    },
+    {
+      "id": 2,
+      "name": "iphone"
+    },
+    {
+      "id": 3,
+      "name": "oppo"
+    }
+  ]
+}

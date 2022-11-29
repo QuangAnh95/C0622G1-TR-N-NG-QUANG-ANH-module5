@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="993b20ee-c9bb-4c2f-ab8c-f0a3d00cc765" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../case_study_angular/CaseStudy/src/app/app.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../case_study_angular/CaseStudy/src/app/app.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../case_study_angular/CaseStudy/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../case_study_angular/CaseStudy/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../case_study_angular/CaseStudy/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../case_study_angular/CaseStudy/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../case_study_angular/CaseStudy/src/app/caseStudy/facility/create-facility/create-facility.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../case_study_angular/CaseStudy/src/app/caseStudy/facility/create-facility/create-facility.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../case_study_angular/CaseStudy/src/app/caseStudy/facility/create-facility/create-facility.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../case_study_angular/CaseStudy/src/app/caseStudy/facility/create-facility/create-facility.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../case_study_angular/CaseStudy/src/app/caseStudy/footer/footer.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../case_study_angular/CaseStudy/src/app/caseStudy/footer/footer.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../case_study_angular/CaseStudy/src/app/caseStudy/footer/footer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../case_study_angular/CaseStudy/src/app/caseStudy/footer/footer.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../case_study_angular/CaseStudy/src/app/caseStudy/header/header.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../case_study_angular/CaseStudy/src/app/caseStudy/header/header.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../case_study_angular/CaseStudy/src/app/caseStudy/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../case_study_angular/CaseStudy/src/app/caseStudy/home/home.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../case_study_angular/CaseStudy/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../case_study_angular/CaseStudy/src/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="993b20ee-c9bb-4c2f-ab8c-f0a3d00cc765" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,6 +10,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="tsconfig.json" />
         <option value="TypeScript File" />
       </list>
     </option>
@@ -45,11 +35,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\CODEGYM\MODULE_5\C0622G1-TRANDANGQUANGANH-module5\bai_tap2\angulaOver\src\app\mvc" />
-      <recent name="D:\CODEGYM\MODULE_5\C0622G1-TRANDANGQUANGANH-module5\bai_tap2\angulaOver\src\app\bai_tap" />
-      <recent name="D:\CODEGYM\MODULE_5\C0622G1-TRANDANGQUANGANH-module5\bai_tap2\angulaOver\src\app\hacker_news" />
-      <recent name="D:\CODEGYM\MODULE_5\C0622G1-TRANDANGQUANGANH-module5\bai_tap2\angulaOver\src" />
-      <recent name="D:\CODEGYM\MODULE_5\C0622G1-TRANDANGQUANGANH-module5\bai_tap2\src" />
+      <recent name="D:\CODEGYM\MODULE_5\C0622G1-TRANDANGQUANGANH-module5\bai_tap2\angulaOver\src\app\product\service" />
+      <recent name="D:\CODEGYM\MODULE_5\C0622G1-TRANDANGQUANGANH-module5\bai_tap2\angulaOver\src\app\product\product" />
+      <recent name="D:\CODEGYM\MODULE_5\C0622G1-TRANDANGQUANGANH-module5\bai_tap2\angulaOver\src\app\product" />
+      <recent name="D:\CODEGYM\MODULE_5\C0622G1-TRANDANGQUANGANH-module5\bai_tap2\angulaOver\src\app\form-register" />
+      <recent name="D:\CODEGYM\MODULE_5\C0622G1-TRANDANGQUANGANH-module5\bai_tap2\angulaOver\src\app\product\model" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -69,6 +59,7 @@
       <workItem from="1669100271227" duration="4559000" />
       <workItem from="1669262407684" duration="13108000" />
       <workItem from="1669340635066" duration="10610000" />
+      <workItem from="1669606935920" duration="16355000" />
     </task>
     <servers />
   </component>
@@ -81,6 +72,10 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
+    <state x="586" y="194" key="#Inspections" timestamp="1669627429273">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="586" y="194" key="#Inspections/0.0.1920.1032@0.0.1920.1032" timestamp="1669627429273" />
     <state x="740" y="270" key="FileChooserDialogImpl" timestamp="1669344899113">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
