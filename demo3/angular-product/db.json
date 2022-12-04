@@ -1,0 +1,103 @@
+{
+  "productType": [
+    {
+      "id": 1,
+      "productTypename": "SamSung"
+    },
+    {
+      "id": 2,
+      "productTypename": "Iphone"
+    },
+    {
+      "id": 3,
+      "productTypename": "OppO"
+    },
+    {
+      "id": 4,
+      "productTypename": "LG"
+    }
+  ],
+  "product": [
+    {
+      "name": "Galaxys4",
+      "price": "25555",
+      "productType": {
+        "id": 1,
+        "productTypename": "SamSung"
+      },
+      "id": 1
+    },
+    {
+      "id": 2,
+      "name": "galaxy5",
+      "price": 4000,
+      "productType": {
+        "id": 1,
+        "productTypename": "SamSung"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Iphone XS",
+      "price": 2000,
+      "productType": {
+        "id": 2,
+        "productTypename": "Iphone"
+      }
+    },
+    {
+      "id": 4,
+      "name": "12 promax",
+      "price": 2000,
+      "productType": {
+        "id": 2,
+        "productTypename": "Iphone"
+      }
+    },
+    {
+      "id": 5,
+      "name": "G6",
+      "price": 2000,
+      "productType": {
+        "id": 4,
+        "productTypename": "LG"
+      }
+    },
+    {
+      "name": "G8",
+      "price": "5000",
+      "productType": {
+        "id": 4,
+        "productTypename": "LG"
+      },
+      "id": 6
+    },
+    {
+      "name": "Neo 5",
+      "price": "123443",
+      "productType": {
+        "id": 3,
+        "productTypename": "OppO"
+      },
+      "id": 7
+    },
+    {
+      "name": "Glaabc",
+      "price": "4656",
+      "productType": {
+        "id": 1,
+        "productTypename": "SamSung"
+      },
+      "id": 8
+    },
+    {
+      "name": "quang anhasacas",
+      "price": "4656",
+      "productType": {
+        "id": 2,
+        "productTypename": "Iphone"
+      },
+      "id": 9
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+a {
+  text-decoration: none;
+  color: #bad8ff;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #bad8ff;
+}
+
+body {
+  /*background-image: url("https://cutewallpaper.org/27/black-wallpaper-iphone-gif/pin-on-things.gif");*/
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  url("https://jobsgo.vn/blog/wp-content/uploads/2021/05/Ky-nang-can-co-cua-ky-su-lap-trinh-nhung.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+.formCSS {
+  background-image: url("https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000");
+}
+
+.modalCSS {
+  background-image: url("https://images.unsplash.com/photo-1607513746994-51f730a44832?ixlib=rb-1.2.1&w=1080&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb");
+}

@@ -1,0 +1,85 @@
+<div class="p-3 px-5">
+  <h2 class="text-center fw-bold">DANH SÁCH SẢN PHẨM <i class="fa-brands fa-product-hunt"></i></h2>
+
+  <nav class="navbar navbar-expand-lg py-0 my-0">
+    <div class="container-fluid">
+      <a routerLink="/create">
+        <button class="btn btn-primary">
+          <!--            <span class="fa-solid "></span>-->
+          <span class="text-light">Thêm Mới Khách Hàng</span>
+        </button>
+      </a>
+      <div class="d-flex my-2" role="search">
+        <input class="form-control me-2" type="text" placeholder="Nhập tên sản phẩm" aria-label="Search"
+               [(ngModel)]="nameSearch">
+      </div>
+      <div class="d-flex my-2" role="search">
+        <input class="form-control me-2" type="number" placeholder="Nhập giá sản phẩm" aria-label="Search"
+               [(ngModel)]="priceSearch">
+      </div>
+      <select class="form-select " [(ngModel)]="typeSearch" [compareWith]="compareWithId" aria-label="search">
+        <option [value]="''" disabled>Loại Sản Phẩm</option>
+        <option *ngFor="let item of productType" [ngValue]="item.productTypename">{{item.productTypename}}</option>
+      </select>
+      <button class="btn btn-light btn-outline-warning" (click)="resetSearchInput()">Reset<i
+        class="fa-solid fa-rotate"></i></button>
+      <button class="btn btn-light btn-outline-success " (click)="searchByMore()">Search<i
+        class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+  </nav>
+
+  <table class="table table-light table-striped table-bordered" id="productTable">
+    <thead>
+    <tr class="table-dark text-light">
+      <th class="text-center">STT</th>
+      <th class="text-center">Tên sản phẩm</th>
+      <th class="text-center">giá</th>
+      <th class="text-center">Loại</th>
+      <th class="text-center">Sửa</th>
+      <th class="text-center">Xóa</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let item of productListPaging | paginate: { itemsPerPage: 3, currentPage: p }; index as i">
+      <td class="text-center">{{i + 1 + (curpage - 1) * numberRecord}}</td>
+      <td>{{item.name|titlecase}}</td>
+      <td>{{item.price}}</td>
+      <td>{{item.productType.productTypename}}</td>
+      <td class="text-center">
+        <a routerLink="/edit/{{item.id}}">
+          <button class="btn btn-success">
+            <i class="fa-solid fa-pen-to-square"></i></button>
+        </a>
+      </td>
+
+      <td class="text-center">
+          <button class="btn btn-danger" (click)="deleteProduct(item.id,item.name)">
+            <i class="fa-solid fa-person-circle-minus"></i></button>
+      </td>
+
+    </tr>
+    </tbody>
+  </table>
+<!--  <pagination-controls (pageChange)="p = $event"></pagination-controls>-->
+
+  <nav aria-label="..." class="justify-content-center d-flex">
+    <ul class="pagination">
+      <li class="page-item">
+        <a class="page-link" (click)="previos()" *ngIf="curpage > 1">&laquo; Trang trước</a>
+      </li>
+      <li class="page-item disabled" *ngIf="curpage <= 1">
+        <a class="page-link">&laquo;</a>
+      </li>
+
+      <li class="page-item"><a class="page-link disabled" href="" [text]="curpage + ' / ' + totalPage" *ngIf="curpage <= totalPage"></a>
+      </li>
+
+      <li class="page-item">
+        <a class="page-link" (click)="next()" *ngIf="curpage < totalPage">Trang sau &raquo;</a>
+      </li>
+      <li class="page-item disabled" *ngIf="curpage >= totalPage">
+        <a class="page-link">&raquo;</a>
+      </li>
+    </ul>
+  </nav>
+</div>

@@ -1,0 +1,94 @@
+<div>
+  <h1 class="text-center" style="color: white">DANH SÁCH VÉ XE</h1>
+
+  <nav class="navbar navbar-expand-lg py-0 my-0" *ngIf="action">
+    <div class="container-fluid">
+      <button class="btn btn-primary btn-outline-secondary mb-2" routerLink="/create">
+        <span class="text-light"> + Thêm mới ...... </span>
+      </button>
+
+      <div class="d-flex my-2" role="search">
+        <input class="form-control me-2" type="text" placeholder="điểm đi.." aria-label="Search"
+               [(ngModel)]="diemDi">
+
+        <input class="form-control me-2" type="text" placeholder="điểm đến.." aria-label="Search"
+               [(ngModel)]="diemDen">
+
+        <input class="form-control me-2" type="text" placeholder="giờ khởi hành.." aria-label="Search"
+               [(ngModel)]="gioDi">
+
+        <button class="btn btn-light btn-outline-primary" (click)="searchByMore()">
+          <i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+    </div>
+  </nav>
+
+
+<h1>{{tongTien}}</h1>
+  <h3 class="text-danger text-center" *ngIf="!action">Không có dữ liệu</h3>
+
+  <div>
+    <table class="table table-light table-striped table-bordered" id="productTable" *ngIf="action">
+      <thead>
+      <tr class="table-dark text-light">
+        <th>STT</th>
+        <th>Điểm Đi</th>
+        <th>Điểm Đến</th>
+        <th>Giá Vé</th>
+        <th>Ngày Khởi Hành</th>
+        <th>Giờ Khởi Hành</th>
+        <th>Nhà Xe</th>
+        <th>Số Lượng</th>
+        <th>Đặt Vé</th>
+        <th>Xóa</th>
+        <th>Chỉnh Sửa</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let item of (iveXeDto$| async); index as i ">
+        <td class="text-center">{{i + 1 + (page - 1) * pageSize}}</td>
+        <td>{{item.diemDi|titlecase}}</td>
+        <td>{{item.diemDen}}</td>
+        <td class="text-center">{{item.giaVe | currency}}</td>
+        <td class="text-center">{{item.ngayKhoiHanh | date: 'dd-MM-yyyy '}}</td>
+        <td class="text-center">{{item.gioKhoiHanh | date: 'HH:mm:ss'}}</td>
+        <td>{{item.tenNhaXe}}</td>
+        <td class="text-center">{{item.soLuong}}</td>
+        <td class="text-center">
+          <a routerLink="/create">
+            <button class="btn btn-success">Đặt vé</button>
+          </a>
+        </td>
+        <td>
+          <button class="btn-danger" (click)="confirmDelete(item)">Xóa</button>
+        </td>
+        <td>
+          <button class="btn-primary" routerLink="/edit/{{item.id}}">Chình Sửa</button>
+        </td>
+      </tr>
+
+      </tbody>
+    </table>
+    <div class="d-flex justify-content-between p-2" *ngIf="action">
+      <ngb-pagination
+        [collectionSize]="(total$ | async)!"
+        [(page)]="page"
+        [maxSize]="3"
+        [rotate]="true"
+        [pageSize]="pageSize"
+        [boundaryLinks]="true"
+        (pageChange)="findAll()">
+      </ngb-pagination>
+
+      <label>
+        <select class="form-control-sm" style="width: auto" [(ngModel)]="pageSize"
+                (ngModelChange)="findAll()">
+          <option [ngValue]="5">5 sản phẩm / trang</option>
+          <option [ngValue]="7">7 sản phẩm / trang</option>
+          <option [ngValue]="10">10 sản phẩm / trang</option>
+        </select>
+      </label>
+    </div>
+  </div>
+</div>
+
