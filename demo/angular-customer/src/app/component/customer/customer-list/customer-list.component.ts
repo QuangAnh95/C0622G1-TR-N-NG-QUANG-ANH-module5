@@ -78,13 +78,13 @@ export class CustomerListComponent implements OnInit {
 
   deleteCustomer(id: number, name: string): void {
     Swal.fire({
-      title: 'Bạn có muốn xóa?',
-      text: 'Khách hàng: ' + name + ' (id: ' + id + ').',
+      title: 'Bạn có muốn hủy đăng ký?',
+      text: 'Khách hàng: ' + name,
       icon: 'warning',
       showCancelButton: true,
       confirmButtonColor: '#3085d6',
       cancelButtonColor: '#d33',
-      confirmButtonText: 'Có, tôi muốn xóa!',
+      confirmButtonText: 'Có, tôi muốn hủy!',
       cancelButtonText: 'Đóng'
     }).then((result) => {
       if (result.isConfirmed) {

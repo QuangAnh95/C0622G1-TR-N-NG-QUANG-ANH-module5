@@ -20,7 +20,7 @@ export class VeXeListComponent implements OnInit {
   idDelete: number;
   diemDenDelete = '';
   tongTien: number;
-  chon : number;
+
 
   total$: Observable<number>;
   iveXeDto$: BehaviorSubject<IVeXeDto[]>;
@@ -36,7 +36,7 @@ export class VeXeListComponent implements OnInit {
 
   findAll() {
     this.veXeService.findAll(this.page, this.pageSize, this.diemDi, this.diemDen, this.gioDi).subscribe(value => {
-      console.log('a')
+      console.log('a');
       if (value != null) {
         this.action = true;
         this.total$ = new BehaviorSubject<number>(value.totalElements);
@@ -44,22 +44,20 @@ export class VeXeListComponent implements OnInit {
       } else {
         this.action = false;
       }
-    })
+    });
   }
 
 
   searchByMore() {
-    console.log(this.diemDi)
+    console.log(this.diemDi);
     this.findAll();
-    console.log('a')
   }
 
   confirmDelete(value) {
-    console.log(value)
+    console.log(value);
     this.diemDiDelete = value.diemDi;
     this.diemDenDelete = value.diemDen;
     this.idDelete = value.id;
-    this.tongTien =value.giaVe * value.soLuong ;
     Swal.fire({
       title: 'Bạn có muốn xóa vé này không ?' + this.tongTien,
       text: 'Tác vụ này không thể hoàn tác !',
@@ -69,7 +67,7 @@ export class VeXeListComponent implements OnInit {
       cancelButtonColor: '#d33',
       confirmButtonText: 'Đồng Ý',
       cancelButtonText: 'Hủy Bỏ',
-    }).then((result) => {
+      }).then((result) => {
       if (result.isConfirmed) {
         this.veXeService.delete(this.idDelete).subscribe(value1 => {
           console.log(this.idDelete);
@@ -80,7 +78,7 @@ export class VeXeListComponent implements OnInit {
           this.page = 1;
           this.ngOnInit();
         });
-      }
+          }
     });
   }
 }

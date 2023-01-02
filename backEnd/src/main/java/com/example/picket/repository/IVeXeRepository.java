@@ -11,10 +11,10 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.Optional;
+
 
 @Repository
-public interface IVeXeRepository extends JpaRepository<VeXe, Integer> {
+public interface    IVeXeRepository extends JpaRepository<VeXe, Integer> {
     @Query(value = "SELECT  ve_xe.diem_den as diemDen,  ve_xe.diem_di as diemDi,  ve_xe.gia_ve as giaVe,  ve_xe.gio_khoi_hanh as gioKhoiHanh, " +
             " ve_xe.ngay_khoi_hanh as ngayKhoiHanh,  ve_xe.so_luong as soLUong, nha_xe.ten_nha_xe as tenNhaXe, ve_xe.id as id " +
             "from ve_xe " +

@@ -29,7 +29,7 @@ export class VeXeService {
   }
 
   delete(id: number): Observable<void> {
-    return this.httpClient.delete<void>(this.API_URL + 'delete/' + id)
+    return this.httpClient.delete<void>(this.API_URL + 'delete/' + id);
   }
 
   update(id: number, veXe: VeXe): Observable<VeXe> {
